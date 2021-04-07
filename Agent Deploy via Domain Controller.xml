@@ -1,0 +1,114 @@
+﻿<LabTech_Expansion
+	Version="210.82"
+	Name="LabTech Script Expansion"
+	Type="PackedScript">
+	<PackedScript>
+		<NewDataSet>
+			<Table>
+				<ScriptId>6083</ScriptId>
+				<FolderId>320</FolderId>
+				<ScriptName>Agent Deploy via Domain Controller</ScriptName>
+				<ScriptNotes>Performs Active Directory query for all computers that have logged in the past month, then attempts to push Automate to than via WinRM and RPC. 
+
+This script assumes that you have set Domain Admin as Location Credentials to authenticate to the targeted computer. This script will push to netowrk devices over a VPN if connected. 
+
+This script calls GitHub for up-to-date Automate-Module.psm1
+https://github.com/Braingears/PowerShell/blob/master/Automate-Module.psm1
+
+Created by Chuck Fowler v2.6.1  2021-04
+https://github.com/Braingears/
+https://forums.mspgeek.org/topic/5373-deploy-agents-automate-scripts/</ScriptNotes>
+				<Permission>0,</Permission>
+				<EditPermission>0,</EditPermission>
+				<ComputerScript>1</ComputerScript>
+				<LocationScript>0</LocationScript>
+				<MaintenanceScript>0</MaintenanceScript>
+				<FunctionScript>0</FunctionScript>
+				<LicenseData>H4sIAAAAAAAEAFWPQQrCMBRE94J3yAEakrT8YsonGxU3CmJF12nzF1mYhrQFe3tpUairYWZ4A4Nn31Lo6WAHa/A+RTIKxaJ4G8O+G8NAyUgUK4fHd/RpZsg8yQXqnZ0yVlMc6NVQYhIylku1Y6oqoIKCXS8oVhDWbfJxeFDqfRfm9f/g259G74zWNs9dCbxoNHClSHMrS8ulBAmlBnAEP34BUKw/bTcf5QTiq+MAAAA=</LicenseData>
+				<ScriptData>H4sIAAAAAAAEAN1ZbW/bNhD+bsD/gWtrJEUrWZJfFXRGvNhpA+TFi730wzYUlHSx2cqiR1JxDAz77TtKcmK7lYa6MZYECBKRRx6PD4/33DHvhr5gM9WjinbKJULepW2ZNLDZv1WCaukxgzCQpLoUDKigU1AgVvreh9yj4UpHquwKBzEedex31fWOtVHvYxZ0XJc6TtBsGDXPbRi2Da5BrSY1LKthNZpuoxFAY6klmZDYXF01OlM3VDC720XXV5kB2VfWfxxHSfsk0LKV1uom7Y1NOxvt2ka7vtFurODBhepYaK/+m/Ud8UixKAbdf/edyS7kKZuyZMryM5OcRAFEiiabQelqcxWSexQKYHEKYHGsfFw0ZtnXGj6dkYghEznrUHVSK/rRmEXQj6gXwikfj0Fkw2vPF0m75hZAOZowSWSimAj4K2YCJNG6boD0sOErLhbkjAdxCCYZcQIhbiKiCsg1ZWEs4C1hikyoJB5AhDqkEsxXEBDFSY9PKYuIBkXwMMTrZ+qdfevwftC57e8/EsOx6616u9ast/8/N6+1Cg6n2/sawQO/5bpOC3zD8ZrXOlTVDLfmOobVtiyn1W7X7bqXcz9+sr59O74TaycHa/vpuf/BFRVMRwO5E6+sPaVAsVXIPQy5n9jCgsOc0KuoGIO6H7dVyK0/NJLO40NSiTjyFrEEcfip2zvi01mMec45pjsyB9oR/wLRJVDJo61QbTx7VO0c5E4iqaiOp6PFDLbCrvn8sSM9usjB74qGLGBqMQDB+HZXuvWUALSLeLodQMuz6pbhOZarKZka9Nq1sXqwfMellLaC653wS/tJQVjMxP0o2C0Zu0+JjOvNAqwqfshwWRZUcm5uxc/I437If6R8ne4YNZIezEK+mOpPTN8xQJIlDUnCo2U2ShXJTIiQnCrEIJUlvScd2ZL19ePoDDETQJjHZHOtcqmrFExniRDXDRIJURMg3VjhmlhtpHO+MkpNqK4+sFoJdT0XEBbhGD0zsxV/dGtGpSJTPOaJScqlf8qlpPCZUlyFfgFiWwSrGlSJ2xSoKsLS0DTNbCON9VLjSZV/xZE/L/QP+6f9oxH5DXORkx45vrw4S74l+fihf9kn592zPvmZvFjLWV7kUEWqZCuKsPPKukdZarScojurmP8FCu7sYYpTThb9veXwc6rR0kCxm2eDvArtUeLk1BoFOFk5jvXyJbkj1nLp1fGvvXO8u3uVS+gx8YFLpSuMyh6KTrMgjldeD7gv2RJpUmxoweF98qy7DrVQR4Bk0jI0a29OQ3AyGeOvXJMPsGPORaL6JUnkuolj0rF/6zePGxBqxI0h+LGAoRKaHwwqByGqHcGtIsYxFz4kGnwBGnZGQ9RxDnPjwvsMviLDhURuMc9oRMeg2cbMOAV3Zg6GR3fT9pNNvL0z5XW5VC79fg7KHIK4YT4MOJJLqkf8eXCQWKVTYMEV97leNhu93q8rDBw+CqXtlEsn0Q2CZvRvZwKkfo3eX7FVT/8I3lHCra/NHp9HIadBuvP9vYlSM3lQrQo6N8dMTWJPW+yjn+ptIedXfxGIzBiokNUBn4MYTiAMq1MkPxDVJZca2XPeTE7tPdzle1DGRr2J8A9iOTHu6NfQGOARp+5jrHjKqtcYqY9krmJoHyCvkt+GPm/yKvltDCd8jmMFjbKXR+MKhMdlzuPtV7mKlZNgrAWKDdLOe0DY+qLvMlV2i0i7olOlgInKH+l+l2eUZEjy0yXIOFTSVLcqj2nSeQ/ENHlvCI8SWLu9Q2B/lIvyXhS2RrK207zyh7KdvHcZLASoP9Fx/hJmCEaWqDP97wXM4G8YzDHJn2PwI+ccTabBmzffTi07lXimgycE1yzMq0k2j+DB3yR2egRFWVPmrQdk47Y/sM/mvUDs8vYv29k/j/8Fe+Mv9EseAAA=</ScriptData>
+				<ScriptVersion>1</ScriptVersion>
+				<ScriptGuid>99a22d65-3b95-11e9-a06a-005056955de5</ScriptGuid>
+				<ScriptFlags>0</ScriptFlags>
+				<Parameters></Parameters>
+			</Table>
+		</NewDataSet>
+		<PackedScript>
+			<NewDataSet>
+				<Table>
+					<ScriptId>6220</ScriptId>
+					<FolderId>320</FolderId>
+					<ScriptName>Generate Agent InstallerToken 1.4.1</ScriptName>
+					<ScriptNotes>Creates an Installer Token.  The maximum token lifetime is just over 1 year.
+
+Parameter Variables:
+TokenReason: Purpose for Token Creation. Default is "Script &lt;SCRIPTID&gt;, requested by &lt;USER&gt;"
+InstallerType: 1=Windows MSI, 2=Windows EXE, 3=Linux x86, 4=Linux x86_x64, 5=macOS
+ValidityPeriod: Amount of time the token is valid, as X UNITs. (5 DAY, 2 MONTH, etc.) Default is 1 day. Integer units of SECOND, MINUTE, HOUR, DAY, WEEK, MONTH, QUARTER, YEAR are supported.
+TargetLocationID: LocationID for the installer. Default is the LocationID for this computer.
+
+Return Variables:
+ExpirationDateUtc: Token Expiration Date String
+InstallerToken:  Generated Token
+InstallerTypeID: InstallerTypeID for the token
+TargetLocationID: LocationID for the token
+
+Darren White - Apex Technology Management - v1.4.1 - 2020-07-08
+Created 20200619
+Modified by Chuck Fowler - 2021-04-07</ScriptNotes>
+					<Permission>0,</Permission>
+					<EditPermission>0,</EditPermission>
+					<ComputerScript>1</ComputerScript>
+					<LocationScript>0</LocationScript>
+					<MaintenanceScript>0</MaintenanceScript>
+					<FunctionScript>1</FunctionScript>
+					<LicenseData>H4sIAAAAAAAEAFWPzQqDMBCE74W+Qx7AkE0QNLIESv+gtJe29B7NCrlEiQbq2xelBXsaZme+hcGrbygMdLCjNficejISxaJ4T2HfpTBSNIBi5fD47n2cGTKn6J2dMnZJgZjUGVOggJVVnldQsN0NxaqMjyb6fnxRHHwX5q//h29+Tt6Z0lFRQw68VqC5lGS5bbXkANAoba0tXPvjFwDFest28wEczzbk2wAAAA==</LicenseData>
+					<ScriptData>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</ScriptData>
+					<ScriptVersion>1</ScriptVersion>
+					<ScriptGuid>8de7b040-b209-11ea-af91-000c29aaa7df</ScriptGuid>
+					<ScriptFlags>0</ScriptFlags>
+					<Parameters>InstallerType,TargetLocationID,TokenReason,ValidityPeriod</Parameters>
+				</Table>
+			</NewDataSet>
+			<ScriptFolder>
+				<NewDataSet>
+					<Table>
+						<FolderID>320</FolderID>
+						<ParentID>205</ParentID>
+						<Name>Automate - Deploy</Name>
+						<GUID>5d7afdc0-bc7d-4367-88ee-344618bd4668</GUID>
+					</Table>
+				</NewDataSet>
+			</ScriptFolder>
+			<ScriptFolder>
+				<NewDataSet>
+					<Table>
+						<FolderID>205</FolderID>
+						<ParentID>0</ParentID>
+						<Name>CWA Custom - Chuck Fowler</Name>
+						<GUID>bfaf1167-4d6e-4d0c-ac12-3f9fd23046d8</GUID>
+					</Table>
+				</NewDataSet>
+			</ScriptFolder>
+		</PackedScript>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>320</FolderID>
+					<ParentID>205</ParentID>
+					<Name>Automate - Deploy</Name>
+					<GUID>5d7afdc0-bc7d-4367-88ee-344618bd4668</GUID>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>205</FolderID>
+					<ParentID>0</ParentID>
+					<Name>CWA Custom - Chuck Fowler</Name>
+					<GUID>bfaf1167-4d6e-4d0c-ac12-3f9fd23046d8</GUID>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+	</PackedScript>
+</LabTech_Expansion>

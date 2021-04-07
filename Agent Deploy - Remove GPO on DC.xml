@@ -1,0 +1,52 @@
+﻿<LabTech_Expansion
+	Version="210.82"
+	Name="LabTech Script Expansion"
+	Type="PackedScript">
+	<PackedScript>
+		<NewDataSet>
+			<Table>
+				<ScriptId>6203</ScriptId>
+				<FolderId>320</FolderId>
+				<ScriptName>Agent Deploy - Remove GPO on DC</ScriptName>
+				<ScriptNotes>Restricted to run on Domain Controllers Only
+• Remove existing 'CW Automate Agent Deployment' GPO
+
+Created by Chuck Fowler v2.5  2021-04
+https://github.com/Braingears/
+https://forums.mspgeek.org/topic/5373-deploy-agents-automate-scripts/</ScriptNotes>
+				<Permission>0,</Permission>
+				<EditPermission>0,</EditPermission>
+				<ComputerScript>1</ComputerScript>
+				<LocationScript>0</LocationScript>
+				<MaintenanceScript>0</MaintenanceScript>
+				<FunctionScript>0</FunctionScript>
+				<LicenseData>H4sIAAAAAAAEAFWPywqDMBRE94X+Qz7AkIemRblk09emhdJK91dzF9lEiQbq3xelBbsaZoYzMHD1LYWBjjiihXrqySoQi8IjhUOXwkjRShArB6d37+PMkK0TDQ6njJ2piQnjxJTKmJZasrwq8kppdr+BWBHwbKPvxxfFwXdhnv4Pvv0leWfbfYO5KzUvnEauFCHHpkAupZFmVxrjyPz4BQCxPrTdfAC6HM5u4AAAAA==</LicenseData>
+				<ScriptData>H4sIAAAAAAAEAO2aW2/iOBTH35H4Dh62jNqH0FygULaLQBC6SL2psNuH1T6YxKVRk5hxnM6gqt997VxoCCTQaTJDttM+NL6dHP+wj88f92ysEWNOB5DCTrkEwJlfdrwCK6rfKIG8dWggU3fAcdhwAwm0EEUkUndu4ik0IxW+sb9ZJwPbHenseLVipde5a+gdrTmFin4qC3VdhoIkISjAaR0KotgQGyenjYaOGqEVb4Dn83HU6cDcmKL5chY9jQYOBE9B/dC1vfJI522RUnSSUmzScqysxMr1WLkR4YEJ7YjMX/43qOtjmxq2i3j98jlou3YuDMvwhoSPQcvI1pFNoTcZ1hotRpG8UkjBIqdgkcVkLpxZ8LTCpzMhLgqa5FVUHd8L1Z4ZNlJtODXRBZ7NEAm6K/9fkpJymoKyfUPQLfribCb6zhUnFYmTrDRTOPUG4GbQB6rlmpBi0r5v1CUdiqIgT5sSDxiKcKqw+CG2RFFutlp1qT5NWKWf2iohmFxi3TUTlusbOctZc5Zz5NxM29n9B6Q9nt9cJ6ATd8O1DBD1VGxKAjZpH7HJSiOFm5IA7DO05r8/l0sH3pKr9U0EyeERKzPG4A9Q6d+BnkuxBSkCvRnzHAzQ3MQLiz1WyqXfwDmiAu/rDRA8K76LYEzxnPcY3YND3zwQbAQOrlzTPALPwRvVbxqa8/41ZmmymKPDo9qQ9bhih/hLuTQhC/Dsu+zZYW+ZIIcy19JffBSOOuAx33+8IwabBe9fAV+hA+6xa+uADaAPhgMGbJKGXXnhLrOfbfPifV5AH1LtAfwzXjgUWbVLaMMZ4mhqATQ+rz62LGjrV5gO+QuXE/43dPHVt4qPyd/5lbXWCfdTw9bcZekN0KBtYwpMDHU2A/bxMPeeEBgYBGksAi0CM+CeYMufYji0stn9Hpm53PnNHh4MWQaF4j690ry6nmwmuvqyiMXKwWF8ERyFvcullx23srh5K8cjRWNlZ9ezDojKngbEVkK6E8mEYqlNp32LLPyEXm2mB8nGRzlbklB6+yKJpWrrb8N58tFxRkNgItW1/CgdavMXVAYsleZOHFtF4rhF17Cdmae0OS2StNmCKh7BMhaBhVLLqbvT8UzqLJd5SNigSsIGlRI2525CRcpcSOe5MesnKQirmmmw1xp6NYFgNcxiX7tsSxGjwgUIwF/OgCf2LFX1s1TAMRFsmighEnYGyEQM5Gw9zw4MLR2zmXSpbkw7pcyFeJ555/cpSq4IuHjbQT36H4QnswRvSDj2nal/PF7FPoQkWb+Xm0VOi8yRlXyLHNekTht0l7Pv5hOuM9dOuSYBYist2FBDe0QpwUZKCNfr4HkEKK+GgHa5FPkwmAEh/C2XRvYTfkQ68GfFelaDGr+i+r7jIEmT7eUXVz/4RJV3Q1goHZZ+GZJ0GzJWL9T+BPzlIDIagOHt9aX37IC7P9VbFVz1LlUexLsmJa49XbisrVtJoO0b+a7LEilzdZbrlzHye+JJ1+fU3e2A2wYuczmWJ7jtcixnmVEsRZZ67ou5EJILJcS2rae1r4gyhlWou8u9VK1yoa4l91y1gntMQNd3g2ef3XVJyowMe6MLdZAgm/oEwTco3MAYS11XqzXsmjrY5WqqxiWgwJILr5O/DP3rqvXpfTXow8oNOxiOL1n2jZmZjTJPzlzm5aq1pRStnfH/+cjFUnBb84bcQ33mV1w/+1zMB1PmkunjnYiFuqj6dSImnYjlUje8qOtuPpwKJd1+6OGUuUzbg8Mpl3ir/Ay5FpaD/8v+D5f1q3umLQAA</ScriptData>
+				<ScriptVersion>1</ScriptVersion>
+				<ScriptGuid>c7ba3d92-4d2a-11ea-ab4a-005056955de5</ScriptGuid>
+				<ScriptFlags>0</ScriptFlags>
+				<Parameters></Parameters>
+			</Table>
+		</NewDataSet>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>320</FolderID>
+					<ParentID>205</ParentID>
+					<Name>Automate - Deploy</Name>
+					<GUID>5d7afdc0-bc7d-4367-88ee-344618bd4668</GUID>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>205</FolderID>
+					<ParentID>0</ParentID>
+					<Name>CWA Custom - Chuck Fowler</Name>
+					<GUID>bfaf1167-4d6e-4d0c-ac12-3f9fd23046d8</GUID>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+	</PackedScript>
+</LabTech_Expansion>
