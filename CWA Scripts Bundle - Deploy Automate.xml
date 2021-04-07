@@ -1,0 +1,383 @@
+﻿<LabTech_Expansion
+	Version="210.39"
+	Name="LabTech Script Expansion"
+	Type="PackedScript">
+	<PackedScript>
+		<NewDataSet>
+			<Table>
+				<ScriptId>6268</ScriptId>
+				<FolderId>205</FolderId>
+				<ScriptName>Sample Scripts Bundle - Deploy Automate</ScriptName>
+				<ScriptNotes></ScriptNotes>
+				<Permission>0,</Permission>
+				<EditPermission>0,</EditPermission>
+				<ComputerScript>1</ComputerScript>
+				<LocationScript>0</LocationScript>
+				<MaintenanceScript>0</MaintenanceScript>
+				<FunctionScript>1</FunctionScript>
+				<LicenseData>H4sIAAAAAAAEAFWPywqDMBRE94X+Qz7AkEdNRLlkYx+bFkor3Sd6F9lEiQbq3xelBbsaZoYzMHD1LYYRj3ayBpp5QCOArQqPFOo+hQmj4cA2Dk7vwceFQdMkHDs7Z+SMLiYbZyIPGZFcCqIrmVe5JvcbsA0Bzzb6YXphHH0flun/4Ntfku+MLHUpudO00DynQqCjThWacq640qVSHaofvwLAtof2uw9n0FNv4AAAAA==</LicenseData>
+				<ScriptData>H4sIAAAAAAAEAN2W22rDMAyG7wd7h76AqU9yaiiBsa2lMNigsHs5diHQJiV1YY+/HJzODax3PZCr6JdkIX22IPN1VuV7/4Ye0+enyWTe6UMravn+4ytsoovcbe1hMu0DX1jhznlXRb7ltjS4jRxdse86KS+LlM2n546zrOUxtynXSnNqFEkUlYQxZ4iBRBFKgYLSANZBX6U90PY8jZsO5dbe7U9TvGQ+NBCs4F8ci1avbBOLVDwkGwzNB1oMtBxoiHiUlU9p3W/zDb7XsvB5cXSN/2SH2OfhI9/l7ZHeDJFVYV3hsR2mjsYyRvJH4QIWfglL8j+XFBIrNpzPiEnANbeFRDM2G9xWSL4zQi4fk6HWyLlVQITR0DDUBKnC6zNk42EoGFjLLSNUIuveoXGgr8+Qj4ehyeodBiWaXc5uuctiPAw5bsTG1Phk5pKOIRp5g12W42GYJQaF1ZxIy/GWDOEeDHsd/r9+ATbMjt2OCQAA</ScriptData>
+				<ScriptVersion>1</ScriptVersion>
+				<ScriptGuid>296920b6-7604-11eb-b576-005056955de5</ScriptGuid>
+				<ScriptFlags>0</ScriptFlags>
+				<Parameters></Parameters>
+			</Table>
+		</NewDataSet>
+		<PackedScript>
+			<NewDataSet>
+				<Table>
+					<ScriptId>6223</ScriptId>
+					<FolderId>320</FolderId>
+					<ScriptName>Agent Deploy - Generate Installers with Tokens</ScriptName>
+					<ScriptNotes>Will generate ticket with Windows MSI, Mac, and Linux installers with tokens.
+• Enter # of months until the token expires. If left blank, the default is 12
+• Enter alternative LocationID. If left blank, it will default to the Location where the script was executed from. 
+• Enter Email address if you want to receive an email with all of the links.
+• Additional PowerShell and Mac Terminal Scripts will be included to make deployments easier. 
+• Use Property 'AutomateModuleURL' to redirect the PowerShell module to an alternate location.
+
+Created by Chuck Fowler v2.6  04/2021
+https://github.com/Braingears
+https://forums.mspgeek.org/topic/5373-deploy-agents-automate-scripts/</ScriptNotes>
+					<Permission>0,</Permission>
+					<EditPermission>0,</EditPermission>
+					<ComputerScript>1</ComputerScript>
+					<LocationScript>0</LocationScript>
+					<MaintenanceScript>0</MaintenanceScript>
+					<FunctionScript>0</FunctionScript>
+					<LicenseData>H4sIAAAAAAAEAFWPywrCMBRE94L/kA9oyEPTF5eA+ALRjYr72Fwhm7SkCdi/lxaFuhrmzpwLA2fXoO9xZ6LRcB861ALYpHBNftsmHzFoDmzmYP/uXBgZ1IfgrBkyckoeicwzIrnkRNbrvOYF2VyAzcpwa4Lr4gND71o/fv0/fPNjclarwq5eUpb0WSikQqChlRAl5VxxlVdKWVQ/fgKAzbcsFx/tPX5z2wAAAA==</LicenseData>
+					<ScriptData>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</ScriptData>
+					<ScriptVersion>1</ScriptVersion>
+					<ScriptGuid>57d3f228-b75e-11ea-9118-005056955de5</ScriptGuid>
+					<ScriptFlags>1</ScriptFlags>
+					<Parameters># Months Valid,TargetLocationID,Email</Parameters>
+				</Table>
+			</NewDataSet>
+			<PackedScript>
+				<NewDataSet>
+					<Table>
+						<ScriptId>6222</ScriptId>
+						<FolderId>320</FolderId>
+						<ScriptName>Generate Agent InstallerToken 1.3</ScriptName>
+						<ScriptNotes>Creates an Installer Token.
+
+Parameters:
+TargetLocationID: LocationID for the installer. Default is the LocationID for this computer.
+TokenReason: Purpose for Token Creation. Default is "Script &lt;SCRIPTID&gt;"
+ValidityPeriod: Amount of time the token is valid, as X UNITs. (1 DAY, 2 MONTH, etc.) Default is 1 day. Only MINUTE,HOUR,DAY,WEEK,MONTH are supported.
+InstallerType: 1=Windows MSI, 2=Windows EXE, 3=Linux x86, 4=Linux x86_x64, 5=macOS
+
+Returns:
+InstallerToken:  Generated Token
+TargetLocationID: LocationID for the token
+ExpirationDateUtc: Token Expiration Date String
+InstallerTypeID: InstallerTypeID for the token
+
+Darren White - Apex Technology Management - v1.3 - 20200625
+Created 20200619</ScriptNotes>
+						<Permission>0,</Permission>
+						<EditPermission>0,</EditPermission>
+						<ComputerScript>1</ComputerScript>
+						<LocationScript>0</LocationScript>
+						<MaintenanceScript>0</MaintenanceScript>
+						<FunctionScript>1</FunctionScript>
+						<LicenseData>H4sIAAAAAAAEAFWPzQrCMBCE74LvkAdoSFK7rS1LQPwD0YuK9zTdQy5pSRuwby8tCvU0zM58C4NXZ8n3dDCD0fgcO9IKxax4j37fRj9Q0BLFwuHx3bkwMaRPwTVmTNglemKqTFgqU8m2VZZVsmC7G4pFGR82uG54Uehd66ev/4dvfo6u0bUtgCDf8LoAy5Uiw0ultlxKkJCXAA3Bj58BFMst69UHGvfJfNsAAAA=</LicenseData>
+						<ScriptData>H4sIAAAAAAAEAN1a7VObSBj/7oz/w7YzOaCigURMTU2EBtJiCeR4UTu11yFhtUwJUCBXnfGPvwWJAQJcL41zjX5IePZ52c1vn31eFk+0aWD7EW9GZn93B4CTBzpMCEQKt1FgxtyhDR0rBM0FY2wG5gxGMAj7uhncwEjypmZke67Ik7r3DboqNEPPJc9Nx7bs6G4MA9uzSNENI9NxYKDf+fCkmbGS2n3neBPTyUz0sKBzJIKM9+mTZn4gJ/Vublv9ybTDQOaovT/pMNN9mobm/jFNv96nKIZijo4ZxoLMwkqikPzuZvaHp+a0CPqPC+OmUbqA9CkdH87dhBatmJehskDRBeBaBbpdoA8LNJPBwwuiPoXWG3+nYwPPjWx3DuPxx+eUp4SSPbMTlcVjyhFdC7pRsmkxN0tmIVmiUANLqw4WqlUNTJ8tug8LqNQx6Dxm/StrL+W08uituGAq1t4IqPTvCGqLqsGUpisQ1ARJGOhAHMqGJOEj7hJ3vOmBk+JmWwSZYeUZWGNJNTCCALs7Q1UZATy1ia1uJAY4DWTiApKZejN/js67bT1wBykt8kRM8joyKwlDHZwpovyoG8Y8ND1Q5PjrYGmzx+sZKqe8mCpRTlSnB8vpY8Xl5G92d57Ss+jnc1xFWRfUc04CbD6ys+CRQwOe+1jhgAuhq3APnWb0iZ92R6Js6ML9e8VQ75Hm/YUgfLgfKbL+nqjYlPzUa21Ja5sOO92pSS19mqkAm81lW7YczP+YedrbhVudK2uCDvIQ9VRhLHEDATfGY0HFsUYYBbZ7E8Bw7kQo6JEYwEgMI1C4eIykABdlTVfxvCUSG2kiUqDJagnhUkASrRqJC1H+FxtHh0jgsEZAQofrEsm0a2RG3ABJMDUSinaZSOTHiYe/N+Xu94slzuFWOVptzGyE353Uh0BVZv5Et9qHzOeKgJeDfc0kxDwfQNlMh8FWAPoXfhraBH764hP7OSOOKOIqfIUfvEK8P5zozYursCrNZNTWQvxomxDv1BWUq0gU4W7/XHbpd8cB9M0AJhZTncNaFDvbVDzVl+VVVXkyFWiEyTcqr5/IH19vGkn6KSNA+7gGyjI32mz+OX4+blfdDaICSLj17SBZkm7PIEozM7+nKobM4zynC184nscNffBFF0eCpnOjMU6QxdKf2KNIKlMUDRR5wOk4tsxa8S71MFJSLlBZNeIZ3DBEHke1A4ndly0AI8vWlRPmzQga0RSJJuscKuoIzblcZpmBuIudNhuw2fgIGk63YXcbIWj42LKGKT1yYlwCWjbaunC99m/j1zVPefDqfamy1ygiVdFu9GVuPQw33kM/afCiO7WNR3pMDFnHXxEguUfJH5YQXLwXVAEUjxCbH2CxiuK7Kh/3qXL018jLdFUL/VtGyPoWulUVIu/2Okpnos+jydCftJjzvY8jp3XDy2fKW3j7/VrXhjdn3tm311RICYrX+sELM8r6s9fbSK9NVzXbW4gwfVSB8OPVmtVdvUHMvy/osoU+KMuP/bZbPB6kGAquOXGg1dODOSRX0we7MlQVuPKXAT8XxPrnKENe2w+/5wO8S7WY/DZXtbrbuM2V+aGAxJq3UT8HaFWr+6wALemBfzHcbFW/elSXYUVZE1Q9vpJWVhIrnh8gMy8oCuGlGC70AVlwv2V8IQcBRDLW27v0KdYgDd9KBx+e4kECnHOSIWi7O/hqOifLXqOQ2Ergw8hlpYuVlbpsfFu5cugwkiaLt5pksbzXjLearoryuy+izAuXuIGwxGNrSJsoShPLVyeb7b/o7er765pVQ5XAy6ZkTnQ4/drkoe94dzO0jgMz9G9PCyVe0SVegmsvAPZiEETIAcCKPwAzAov3c6DkleoP23HABIK/484NzBF8DihJfQDt7sHTbOfGLx9+u2ucr1Hkh91msxG3QMFXL4xccwYb6258RRnCez9cxzMt5FTrNVL/x8XGgk7/z+QfBBiOS3YiAAA=</ScriptData>
+						<ScriptVersion>1</ScriptVersion>
+						<ScriptGuid>bc75e563-b75c-11ea-9118-005056955de5</ScriptGuid>
+						<ScriptFlags>0</ScriptFlags>
+						<Parameters>InstallerType,TargetLocationID,TokenReason,ValidityPeriod</Parameters>
+					</Table>
+				</NewDataSet>
+				<ScriptFolder>
+					<NewDataSet>
+						<Table>
+							<FolderID>320</FolderID>
+							<ParentID>205</ParentID>
+							<Name>Automate - Deploy</Name>
+							<GUID>5d7afdc0-bc7d-4367-88ee-344618bd4668</GUID>
+						</Table>
+					</NewDataSet>
+				</ScriptFolder>
+				<ScriptFolder>
+					<NewDataSet>
+						<Table>
+							<FolderID>205</FolderID>
+							<ParentID>0</ParentID>
+							<Name>CWA Custom - Chuck Fowler</Name>
+							<GUID>bfaf1167-4d6e-4d0c-ac12-3f9fd23046d8</GUID>
+						</Table>
+					</NewDataSet>
+				</ScriptFolder>
+			</PackedScript>
+			<ScriptFolder>
+				<NewDataSet>
+					<Table>
+						<FolderID>320</FolderID>
+						<ParentID>205</ParentID>
+						<Name>Automate - Deploy</Name>
+						<GUID>5d7afdc0-bc7d-4367-88ee-344618bd4668</GUID>
+					</Table>
+				</NewDataSet>
+			</ScriptFolder>
+			<ScriptFolder>
+				<NewDataSet>
+					<Table>
+						<FolderID>205</FolderID>
+						<ParentID>0</ParentID>
+						<Name>CWA Custom - Chuck Fowler</Name>
+						<GUID>bfaf1167-4d6e-4d0c-ac12-3f9fd23046d8</GUID>
+					</Table>
+				</NewDataSet>
+			</ScriptFolder>
+		</PackedScript>
+		<PackedScript>
+			<NewDataSet>
+				<Table>
+					<ScriptId>6083</ScriptId>
+					<FolderId>320</FolderId>
+					<ScriptName>Agent Deploy via Domain Controller</ScriptName>
+					<ScriptNotes>Performs Active Directory query for all computers that have logged in the past month, then attempts to push Automate to than via WinRM and RPC. 
+
+This script assumes that you have set Domain Admin as Location Credentials to authenticate to the targeted computer. This script will push to netowrk devices over a VPN if connected. 
+
+This script calls GitHub for up-to-date Automate-Module.psm1
+https://github.com/Braingears/PowerShell/blob/master/Automate-Module.psm1
+
+Created by Chuck Fowler v2.6  2021-04
+https://github.com/Braingears/
+https://forums.mspgeek.org/topic/5373-deploy-agents-automate-scripts/</ScriptNotes>
+					<Permission>0,</Permission>
+					<EditPermission>0,</EditPermission>
+					<ComputerScript>1</ComputerScript>
+					<LocationScript>0</LocationScript>
+					<MaintenanceScript>0</MaintenanceScript>
+					<FunctionScript>0</FunctionScript>
+					<LicenseData>H4sIAAAAAAAEAFWPQQrCMBRE94J3yAEakrT8YsonGxU3CmJF12nzF1mYhrQFe3tpUairYWZ4A4Nn31Lo6WAHa/A+RTIKxaJ4G8O+G8NAyUgUK4fHd/RpZsg8yQXqnZ0yVlMc6NVQYhIylku1Y6oqoIKCXS8oVhDWbfJxeFDqfRfm9f/g259G74zWNs9dCbxoNHClSHMrS8ulBAmlBnAEP34BUKw/bTcf5QTiq+MAAAA=</LicenseData>
+					<ScriptData>H4sIAAAAAAAEAN1ZUW/bNhB+N+D/wLU10qKVLMmWbQWdES922gBJ6sVe+rANAyVdba6y6JFUHAPDfvuOkpzYbqWhbowlAYJE5JHH48fjfXfM21Eg2Fz1qaLdaoWQt1lbpg1sDm6UoFp6wiAKJamvBEMq6AwUiLW+dxH3abTWkSm7wkGMx137bX2zY2PUu4SFXc+jjhO2XKPhe65h2+AZ1GpRw7Jcy215rhuCu9KSTkhtrq8bnasbKZjf7qIXqNyA/CvvP0nitH0aatlaa32T9tamna12Y6vd3Gq7a3hwoboW2qv/5n3HPFYsTkD3337nsg/yjM1YOmX1mUtO4xBiRdPNoHS9uQ7JHQolsDglsDhWMS4as/xrA5/uWCSQi5xNqLqZFYN4wmIYxNSP4IxPJiDy4Y2ni6Td8EqgHE+ZJDJVTAT8lTABkmhd10D62AgUF0tyzsMkApOMOYEINxFTBeQTZVEi4A1hikypJD5AjDqkEixQEBLFSZ/PKIuJBkXwKMLrZ+qdfe3wvtO57W8/EsOxm+1mp9Fqdv4/N2+0Sw6n1/8SwcOg7XlOGwLD8VufdKhqGF7DcwyrY1lOu9Np2k2/4H78YH39dnwj1k4B1vbjc//DKyqYjgZyL17ZeEyBYqeQexTxILWFhUcFoVdRMQF1N26nkNu8bySdh4ekEknsLxMJ4uiPXv+Yz+YJ5jkXmO7IAmjH/DPEl0Alj3dC1X3yqNoFyJ3GUlEdT8fLOeyEXevpY0f6dFmA3xWNWMjUcgiC8d2udPsxAWiX8bQftF1wWw3Db7uBpmRqeLbd2aoe9sAvnUcFYTkTD+Jwv2TsPSYybrZKsKoFEcNlWVgruLm1ICePuyH/kfJ1exPUSPowj/hypj8xfccASVY0JAmPV9koVSQ3IUZyqhGD1Fb0nnbkSzY3j6M7wkwAYZ6Q7bWqlZ5SMJunQlw3TCVETYH0EoVrYrWRzfnCKDWluvrAaiXS9VxIWIxj9MzcVvzRrTmViszwmKcmqVb+qVbSwmdGcRX6GYhtEaxqUCVuU6CqGEtD0zTzjbibpcajKv/KI39R6B8NzgbHY/IL5iKnfXJy+eE8/Zbk4/vB5YBc9M4H5EfybCNneVZAFZmSnSjCLirrHmSp0XbK7qxiwWcoubNHGU4FWfS3lsNPqUbLAsV+ng2KKrQHiZPTcEtwsgoc6/lzckus1cqLk5/7F3h3D2qX0GfiPZdKVxi1AxSd5UEcr7wecFeypdK02NCCo7vkWXcdaaGOAOmkVWjW3pyF4HQyxl+5IR9ix4KLVPVzksp1E8dkY//Wbx7XINSYGyMIEgEjJTQ/GFQOI1Q7hhtFjBMuAkg1BAI07IxGqOMCFsYH/08IFBktJXKLeU5jOgHNNmbOKbgzczg6vp32Mt3Em1tTXlUr1cqvF6DMEYhrFsCQI7lkesTvh4epVToFFlzxgOtl89Gb/brCwOHjSNpOtXIaXyNoxuBmLkDq1+iXa7bq6R/BP0659ZXZ54s44jTMdv7yYKrUXB7W64IuzAlT08TXFgfop3pbyPn1nwQiMwEqZH3IFyBGU4ii+gzJD0R9xaVG/pw3lzP7AHf5DpSxVW8i/MNETo1b+jU0BnjEmfsYa56y7jVG5iO5qxjaB8iL9Lehz5u8SH8boylf4FhB4/zl0bgC4XNZ8Hj7Ra5iFSQYG4Fii7SLHhB2vuj7TJW9MtKu6VQpZKL2W7bf1RmlGZL84xJkEilpqhtVxDTZvHtimqI3hAcJrN3ZI7Dfy0VFLwo7I9nYa175XdlO0bsMFgI0mOo4fwlzBCNP1Jn+9wJm8NcMFpjkLzD4kQuOJtPw9euvp5bdWjLXwRPCTywqqkm2j+De3yT2egRlWVPurYdk67bfs88WvUDs8/av2vk/j/8F7hp5sEseAAA=</ScriptData>
+					<ScriptVersion>1</ScriptVersion>
+					<ScriptGuid>99a22d65-3b95-11e9-a06a-005056955de5</ScriptGuid>
+					<ScriptFlags>0</ScriptFlags>
+					<Parameters></Parameters>
+				</Table>
+			</NewDataSet>
+			<ScriptFolder>
+				<NewDataSet>
+					<Table>
+						<FolderID>320</FolderID>
+						<ParentID>205</ParentID>
+						<Name>Automate - Deploy</Name>
+						<GUID>5d7afdc0-bc7d-4367-88ee-344618bd4668</GUID>
+					</Table>
+				</NewDataSet>
+			</ScriptFolder>
+			<ScriptFolder>
+				<NewDataSet>
+					<Table>
+						<FolderID>205</FolderID>
+						<ParentID>0</ParentID>
+						<Name>CWA Custom - Chuck Fowler</Name>
+						<GUID>bfaf1167-4d6e-4d0c-ac12-3f9fd23046d8</GUID>
+					</Table>
+				</NewDataSet>
+			</ScriptFolder>
+		</PackedScript>
+		<PackedScript>
+			<NewDataSet>
+				<Table>
+					<ScriptId>6187</ScriptId>
+					<FolderId>320</FolderId>
+					<ScriptName>Agent Deploy via Scan Local Subnet</ScriptName>
+					<ScriptNotes>Override Username Syntax: 
+Domain\Username         or
+Localhost\Username      or
+Username@Domain.com
+
+Scans entire subnet where the agent is located and uses assigned Location Credentials (unless Override User/Pass is entered) to push Automate Agent. 
+
+This script calls GitHub for up-to-date Automate-Module.psm1
+https://github.com/Braingears/PowerShell/blob/master/Automate-Module.psm1
+
+Created by Chuck Fowler v2.6  2021-04
+https://forums.mspgeek.org/topic/5373-deploy-agents-automate-scripts/
+https://github.com/Braingears/</ScriptNotes>
+					<Permission>0,</Permission>
+					<EditPermission>0,</EditPermission>
+					<ComputerScript>1</ComputerScript>
+					<LocationScript>0</LocationScript>
+					<MaintenanceScript>0</MaintenanceScript>
+					<FunctionScript>0</FunctionScript>
+					<LicenseData>H4sIAAAAAAAEAFWPQQrCMBRE94J3yAEakrR+seWTjYobBbGi67T5iyxMQ5qCvb20KNTVMDO8gcGza8n3dDDJaLyPgbRCMSveBr/vBp8oaoli4fD4Di5ODOknWU+9NWPGagqJXg1FJiFjuVQ7pqoCKijY9YJiAWHdRhfSg2LvOj+t/wff/jQ4qwsF1uZWcbkxiitFhjcEJZcSJGxLAEvw42cAxfLTevUBcD+VF+MAAAA=</LicenseData>
+					<ScriptData>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</ScriptData>
+					<ScriptVersion>1</ScriptVersion>
+					<ScriptGuid>315dd2d1-04a1-11ea-be59-005056955de5</ScriptGuid>
+					<ScriptFlags>0</ScriptFlags>
+					<Parameters>OverrideUsername,OverridePassword</Parameters>
+				</Table>
+			</NewDataSet>
+			<ScriptFolder>
+				<NewDataSet>
+					<Table>
+						<FolderID>320</FolderID>
+						<ParentID>205</ParentID>
+						<Name>Automate - Deploy</Name>
+						<GUID>5d7afdc0-bc7d-4367-88ee-344618bd4668</GUID>
+					</Table>
+				</NewDataSet>
+			</ScriptFolder>
+			<ScriptFolder>
+				<NewDataSet>
+					<Table>
+						<FolderID>205</FolderID>
+						<ParentID>0</ParentID>
+						<Name>CWA Custom - Chuck Fowler</Name>
+						<GUID>bfaf1167-4d6e-4d0c-ac12-3f9fd23046d8</GUID>
+					</Table>
+				</NewDataSet>
+			</ScriptFolder>
+		</PackedScript>
+		<PackedScript>
+			<NewDataSet>
+				<Table>
+					<ScriptId>6202</ScriptId>
+					<FolderId>320</FolderId>
+					<ScriptName>Agent Deploy - Create GPO on DC</ScriptName>
+					<ScriptNotes>Restricted to run on Domain Controllers with PDC/FSMO Role Only
+• Create 'CW Automate Agent Deployment' GPO
+• Automatically Links GPO in Root (Optional)
+• GitHub Hosted PowerShell Module: https://github.com/Braingears/PowerShell
+• Use Property 'AutomateModuleURL' to redirect the PowerShell module to an alternate location. 
+
+Created by Chuck Fowler v2.6  2021-04
+https://github.com/Braingears/
+https://forums.mspgeek.org/topic/5373-deploy-agents-automate-scripts/</ScriptNotes>
+					<Permission>0,</Permission>
+					<EditPermission>0,</EditPermission>
+					<ComputerScript>1</ComputerScript>
+					<LocationScript>0</LocationScript>
+					<MaintenanceScript>0</MaintenanceScript>
+					<FunctionScript>0</FunctionScript>
+					<LicenseData>H4sIAAAAAAAEAFWPywrCMBRE94L/kA9oyKONYrlk42ujICrub9NbyCYtaQP276VFoa6GmeEMDFy8o9DTAQe08Bw7sgrErHBPYd+mMFC0EsTCwfHd+TgxZJ+J+hrHjJ2oignjyJTKmJZasrws8lJpdruCWBDwcNF3w4ti79swTf8H3/6cfG01NnlTGccLR1uuFCHHqkAupZFmszOmJvPjZwDE8tB69QEX/3Vd4AAAAA==</LicenseData>
+					<ScriptData>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</ScriptData>
+					<ScriptVersion>1</ScriptVersion>
+					<ScriptGuid>2af3fb5c-4ce7-11ea-ab4a-005056955de5</ScriptGuid>
+					<ScriptFlags>0</ScriptFlags>
+					<Parameters>Link_GPO_to_Root_True_or_False,# Months Valid</Parameters>
+				</Table>
+			</NewDataSet>
+			<PackedScript>
+				<NewDataSet>
+					<Table>
+						<ScriptId>6203</ScriptId>
+						<FolderId>320</FolderId>
+						<ScriptName>Agent Deploy - Remove GPO on DC</ScriptName>
+						<ScriptNotes>Restricted to run on Domain Controllers Only
+• Remove existing 'CW Automate Agent Deployment' GPO
+
+Created by Chuck Fowler v2.5  2021-04
+https://github.com/Braingears/
+https://forums.mspgeek.org/topic/5373-deploy-agents-automate-scripts/</ScriptNotes>
+						<Permission>0,</Permission>
+						<EditPermission>0,</EditPermission>
+						<ComputerScript>1</ComputerScript>
+						<LocationScript>0</LocationScript>
+						<MaintenanceScript>0</MaintenanceScript>
+						<FunctionScript>0</FunctionScript>
+						<LicenseData>H4sIAAAAAAAEAFWPywqDMBRE94X+Qz7AkIemRblk09emhdJK91dzF9lEiQbq3xelBbsaZoYzMHD1LYWBjjiihXrqySoQi8IjhUOXwkjRShArB6d37+PMkK0TDQ6njJ2piQnjxJTKmJZasrwq8kppdr+BWBHwbKPvxxfFwXdhnv4Pvv0leWfbfYO5KzUvnEauFCHHpkAupZFmVxrjyPz4BQCxPrTdfAC6HM5u4AAAAA==</LicenseData>
+						<ScriptData>H4sIAAAAAAAEAO2aW2/iOBTH35H4Dh62jNqH0FygULaLQBC6SL2psNuH1T6YxKVRk5hxnM6gqt997VxoCCTQaTJDttM+NL6dHP+wj88f92ysEWNOB5DCTrkEwJlfdrwCK6rfKIG8dWggU3fAcdhwAwm0EEUkUndu4ik0IxW+sb9ZJwPbHenseLVipde5a+gdrTmFin4qC3VdhoIkISjAaR0KotgQGyenjYaOGqEVb4Dn83HU6cDcmKL5chY9jQYOBE9B/dC1vfJI522RUnSSUmzScqysxMr1WLkR4YEJ7YjMX/43qOtjmxq2i3j98jlou3YuDMvwhoSPQcvI1pFNoTcZ1hotRpG8UkjBIqdgkcVkLpxZ8LTCpzMhLgqa5FVUHd8L1Z4ZNlJtODXRBZ7NEAm6K/9fkpJymoKyfUPQLfribCb6zhUnFYmTrDRTOPUG4GbQB6rlmpBi0r5v1CUdiqIgT5sSDxiKcKqw+CG2RFFutlp1qT5NWKWf2iohmFxi3TUTlusbOctZc5Zz5NxM29n9B6Q9nt9cJ6ATd8O1DBD1VGxKAjZpH7HJSiOFm5IA7DO05r8/l0sH3pKr9U0EyeERKzPG4A9Q6d+BnkuxBSkCvRnzHAzQ3MQLiz1WyqXfwDmiAu/rDRA8K76LYEzxnPcY3YND3zwQbAQOrlzTPALPwRvVbxqa8/41ZmmymKPDo9qQ9bhih/hLuTQhC/Dsu+zZYW+ZIIcy19JffBSOOuAx33+8IwabBe9fAV+hA+6xa+uADaAPhgMGbJKGXXnhLrOfbfPifV5AH1LtAfwzXjgUWbVLaMMZ4mhqATQ+rz62LGjrV5gO+QuXE/43dPHVt4qPyd/5lbXWCfdTw9bcZekN0KBtYwpMDHU2A/bxMPeeEBgYBGksAi0CM+CeYMufYji0stn9Hpm53PnNHh4MWQaF4j690ry6nmwmuvqyiMXKwWF8ERyFvcullx23srh5K8cjRWNlZ9ezDojKngbEVkK6E8mEYqlNp32LLPyEXm2mB8nGRzlbklB6+yKJpWrrb8N58tFxRkNgItW1/CgdavMXVAYsleZOHFtF4rhF17Cdmae0OS2StNmCKh7BMhaBhVLLqbvT8UzqLJd5SNigSsIGlRI2525CRcpcSOe5MesnKQirmmmw1xp6NYFgNcxiX7tsSxGjwgUIwF/OgCf2LFX1s1TAMRFsmighEnYGyEQM5Gw9zw4MLR2zmXSpbkw7pcyFeJ555/cpSq4IuHjbQT36H4QnswRvSDj2nal/PF7FPoQkWb+Xm0VOi8yRlXyLHNekTht0l7Pv5hOuM9dOuSYBYist2FBDe0QpwUZKCNfr4HkEKK+GgHa5FPkwmAEh/C2XRvYTfkQ68GfFelaDGr+i+r7jIEmT7eUXVz/4RJV3Q1goHZZ+GZJ0GzJWL9T+BPzlIDIagOHt9aX37IC7P9VbFVz1LlUexLsmJa49XbisrVtJoO0b+a7LEilzdZbrlzHye+JJ1+fU3e2A2wYuczmWJ7jtcixnmVEsRZZ67ou5EJILJcS2rae1r4gyhlWou8u9VK1yoa4l91y1gntMQNd3g2ef3XVJyowMe6MLdZAgm/oEwTco3MAYS11XqzXsmjrY5WqqxiWgwJILr5O/DP3rqvXpfTXow8oNOxiOL1n2jZmZjTJPzlzm5aq1pRStnfH/+cjFUnBb84bcQ33mV1w/+1zMB1PmkunjnYiFuqj6dSImnYjlUje8qOtuPpwKJd1+6OGUuUzbg8Mpl3ir/Ay5FpaD/8v+D5f1q3umLQAA</ScriptData>
+						<ScriptVersion>1</ScriptVersion>
+						<ScriptGuid>c7ba3d92-4d2a-11ea-ab4a-005056955de5</ScriptGuid>
+						<ScriptFlags>0</ScriptFlags>
+						<Parameters></Parameters>
+					</Table>
+				</NewDataSet>
+				<ScriptFolder>
+					<NewDataSet>
+						<Table>
+							<FolderID>320</FolderID>
+							<ParentID>205</ParentID>
+							<Name>Automate - Deploy</Name>
+							<GUID>5d7afdc0-bc7d-4367-88ee-344618bd4668</GUID>
+						</Table>
+					</NewDataSet>
+				</ScriptFolder>
+				<ScriptFolder>
+					<NewDataSet>
+						<Table>
+							<FolderID>205</FolderID>
+							<ParentID>0</ParentID>
+							<Name>CWA Custom - Chuck Fowler</Name>
+							<GUID>bfaf1167-4d6e-4d0c-ac12-3f9fd23046d8</GUID>
+						</Table>
+					</NewDataSet>
+				</ScriptFolder>
+			</PackedScript>
+			<PackedScript>
+				<NewDataSet>
+					<Table>
+						<ScriptId>5960</ScriptId>
+						<FolderId>205</FolderId>
+						<ScriptName>Extract Zip</ScriptName>
+						<ScriptNotes>Requires: 
+@ZipFullPath@ - The Full Path of the zip file to be extracted
+@ZipExtractPath@ - Extract the Zip to the following Path.
+
+Created by Chuck Fowler</ScriptNotes>
+						<Permission>0,</Permission>
+						<EditPermission>0,</EditPermission>
+						<ComputerScript>1</ComputerScript>
+						<LocationScript>0</LocationScript>
+						<MaintenanceScript>0</MaintenanceScript>
+						<FunctionScript>1</FunctionScript>
+						<LicenseData>H4sIAAAAAAAEAFWPzQrCMBCE74LvkAdoyB+rtSy5+HexICreQ7JgLmlJW7BvLy0K9TTMznwLg5foKXV0cL2z+BhbsgrFrHgb0r4ZUk/ZShQLh8d3G/PEkD3lGNxYsNpl/2LaFExLVTJTSaiMYdcaxaKNd59j2z8pd7FJ09v/wzc/DzFYIu932yC5Jhe4UlTyUnvgUoKEzQ4gEPz4GUCxHLNefQA3F55c3AAAAA==</LicenseData>
+						<ScriptData>H4sIAAAAAAAEAOWYXW/aMBSG7yftP1iVuAzgfJCAWARqoao0aZXQdjFx48WnxZpxosRZ0/36OcGhgUFoV7Iq2xV+z7Ed+7F9js14EcQskldEEv/9O4TGG50UQslZJmOSe+cMOE1Qr3TckpisQUJcsV3z8BvhiT+NonnIKcQfLjvWtONcLtIoCmM57pU1dIPNx76oTlgofDzu7Rp2al2njPoAQTB0ad8wgVADY/AMzwwco993+s5g6DgUnLKXokExp151Urq7hYRoO45pIPUAdEnb56ko9A3NfRVVhYD3oJh72trT9p52nvRCQfL7arz5r7ZdhkIykUJu35a171Pyka1Z0aQsas+NoCAkKSajvFVZRfJEoQaLWYfFGh4H44+uwgfBQ0Ldrywa97T1/4WF7RpYk+2xmSxdQwFbuj9JFzI4DC4fqS7tAPRHM0EPcLdexBWfm6vZIFfTq8H6WTLOJINk6aLTUE8tgvmq3Wr+s1Q5C0Ak0JWZfDbZ39u8jq71crqGiW3X9qyB7b0Z5xZFBbtV+7cuMx3Fiu4YB/RAEiRCie7CVNAuKsGhNXlEK/JD1SKqGkURB5KAMn8HlKQxIHKvJoMCIhAt28jVptMummXqyIh7tJlPI/nQOfcK2U2uEHb+2q1q0CYwJ25Vh4/yeTeS26qL1Qle+SMmaObAeW3iVBsSZxkEaR6fRuh4dMzQRMl5yvktkatJI0iHbcoyePBHWSZDFzsgL5ARFha9V0vjYyOE8dmfTW+WyPWuDcUIdZIVcB5DknLZaYZbq55Fp7NIk4ERn/2x84zIWGr9f9Yv5u+2oN4SAAA=</ScriptData>
+						<ScriptVersion>1</ScriptVersion>
+						<ScriptGuid>eecc97d0-2ead-11e8-82c5-005056955de5</ScriptGuid>
+						<ScriptFlags>0</ScriptFlags>
+						<Parameters></Parameters>
+					</Table>
+				</NewDataSet>
+				<ScriptFolder>
+					<NewDataSet>
+						<Table>
+							<FolderID>205</FolderID>
+							<ParentID>0</ParentID>
+							<Name>CWA Custom - Chuck Fowler</Name>
+							<GUID>bfaf1167-4d6e-4d0c-ac12-3f9fd23046d8</GUID>
+						</Table>
+					</NewDataSet>
+				</ScriptFolder>
+			</PackedScript>
+			<ScriptFolder>
+				<NewDataSet>
+					<Table>
+						<FolderID>320</FolderID>
+						<ParentID>205</ParentID>
+						<Name>Automate - Deploy</Name>
+						<GUID>5d7afdc0-bc7d-4367-88ee-344618bd4668</GUID>
+					</Table>
+				</NewDataSet>
+			</ScriptFolder>
+			<ScriptFolder>
+				<NewDataSet>
+					<Table>
+						<FolderID>205</FolderID>
+						<ParentID>0</ParentID>
+						<Name>CWA Custom - Chuck Fowler</Name>
+						<GUID>bfaf1167-4d6e-4d0c-ac12-3f9fd23046d8</GUID>
+					</Table>
+				</NewDataSet>
+			</ScriptFolder>
+		</PackedScript>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>205</FolderID>
+					<ParentID>0</ParentID>
+					<Name>CWA Custom - Chuck Fowler</Name>
+					<GUID>bfaf1167-4d6e-4d0c-ac12-3f9fd23046d8</GUID>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+	</PackedScript>
+</LabTech_Expansion>
