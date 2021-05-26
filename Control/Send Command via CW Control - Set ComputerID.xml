@@ -1,0 +1,47 @@
+﻿<LabTech_Expansion
+	Version="210.108"
+	Name="LabTech Script Expansion"
+	Type="PackedScript">
+	<PackedScript>
+		<NewDataSet>
+			<Table>
+				<ScriptId>6291</ScriptId>
+				<FolderId>345</FolderId>
+				<ScriptName>Send Command via CW Control - Set ComputerID</ScriptName>
+				<ScriptNotes></ScriptNotes>
+				<Permission>5,</Permission>
+				<EditPermission>5,</EditPermission>
+				<ComputerScript>1</ComputerScript>
+				<LocationScript>0</LocationScript>
+				<MaintenanceScript>0</MaintenanceScript>
+				<FunctionScript>0</FunctionScript>
+				<LicenseData>H4sIAAAAAAAEAFWPwQrCMBBE74L/kA9oyCaYUsuSi4oXC6LiPU32kEta0hTs32uLQj3tzsy+gcVLcBQHOtpsDT6mnoxEsUy8jfHQjTFTMoBipfD06kOaGTJNF72dCtbYialdwRQoyapaqloBuzYoVrd4dyn0+UlpCF2cS/+Nb34egze+bCsF3vPWOeJSUvvZiDiABl3utfakf/wCoFi/st28Absntm/aAAAA</LicenseData>
+				<ScriptData>H4sIAAAAAAAEAN2WXW+iQBSG75v0P5z0YtUEI2Cx2+gSiY4uiaIR1MsywKRLomCYIdn99zvgqOgCSdM0TffK854zH2eed8wwsP0kPLAxZli/vwMYHDXNBZfoN0twVp2EZBdQ6JwKS5zgPWEkobpBafgajeL9IeXaHA86haIYPt3FHt4V5h/32fAhYRzpyqBznbgaNU3DQA963ndVDoK25/ukrSjE4xEhbVnWZK33rGkB0U6r5BPy43SK5xHL2Ywczo0ZPhMNiEjkJ2mUazPIagVVPL9yw0O90d0b/XijtQKPOGG6zPvNfkVuFEcsjFKS5c+xqC3oLNyH+ZRTKCpmFJCI4fwwvFqURSQXCjVY1BosT3I1l6o7oVzj0rsir9ZjyywQ0X+DT63Dp1TwGvqCaBgMy9FVke++6SIqbyepPH0aSiXbu5KljWZo5IA5ae4wZT5vH/sMvr2yPowNB70Y43HTWmybLQlMy0GrjTGDdg/mprV2UEtSJLkFk9ViDif2FLY/0QrBxQv4AcNb7sN+hYdqhXFyuVPnfP3dV7/S3e/V+WVaNlpxv6bWgkPmlizAPSTxgSQsJNSFpmvxx8WVwN3gXUrcFnDH1shuNkbb0cuxoYsNDanxrzWNVh/u79bLzP/rxW3kHJfjlpZNFNZbxjwfUbpjH8qdf+fj0P1KDqvPdY9DyuI9ZgSWR/J/4KEM5AP8whQ8QiKghAGLS/5kH0L68RNIn7T4EvsL+fbzI5gJAAA=</ScriptData>
+				<ScriptVersion>1</ScriptVersion>
+				<ScriptGuid>d6b820dd-bcce-11eb-bcee-005056955de5</ScriptGuid>
+				<ScriptFlags>1</ScriptFlags>
+				<Parameters>AssignComputerID</Parameters>
+			</Table>
+		</NewDataSet>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>345</FolderID>
+					<ParentID>205</ParentID>
+					<Name>Control | ScreenConnect</Name>
+					<GUID>98813814-27fd-40dc-b110-43261799f3d3</GUID>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>205</FolderID>
+					<ParentID>0</ParentID>
+					<Name>CWA Custom - Chuck Fowler</Name>
+					<GUID>bfaf1167-4d6e-4d0c-ac12-3f9fd23046d8</GUID>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+	</PackedScript>
+</LabTech_Expansion>
