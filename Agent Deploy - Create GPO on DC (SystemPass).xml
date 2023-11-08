@@ -1,0 +1,148 @@
+﻿<LabTech_Expansion
+	Version="230.475"
+	Name="LabTech Script Expansion"
+	Type="PackedScript">
+	<PackedScript>
+		<NewDataSet>
+			<Table>
+				<ScriptId>6352</ScriptId>
+				<FolderId>320</FolderId>
+				<ScriptName>Agent Deploy - Create GPO on DC (SystemPass)</ScriptName>
+				<ScriptNotes>Will automatically execute from the FSMO PDC Emulator within the Client
+• Create 'CW Automate Agent Deployment' GPO
+• Automatically Links GPO in Root (Optional)
+• GitHub Hosted PowerShell Module: https://github.com/Braingears/PowerShell
+• Use Property 'AutomateModuleURL' to redirect the PowerShell module to an alternate location. 
+
+Created by Chuck Fowler v4.0  2022-02
+https://github.com/Braingears/
+https://forums.mspgeek.org/topic/5373-deploy-agents-automate-scripts/</ScriptNotes>
+				<Permission>0,</Permission>
+				<EditPermission>0,</EditPermission>
+				<ComputerScript>1</ComputerScript>
+				<LocationScript>0</LocationScript>
+				<MaintenanceScript>0</MaintenanceScript>
+				<FunctionScript>0</FunctionScript>
+				<LicenseData>H4sIAAAAAAAEAFWPywqDMBRE94X+Qz7AkIeNVblk09emhdJK9zG5i2yiRAP174vSgl0NM8MZGLh6i2HAoxmNhmbqUQtgi8IjhUOXwohRc2ArB6d37+PMoG4SDs5MGTljG5OJExEiI5JLTvJ6l9dCkvsN2IqAp42+H18YB9+Fefo/+PaX5J1GUwpbSElLtedUCLS0da2knCuuikoph+rHLwCw9aHt5gOIQeTl4AAAAA==</LicenseData>
+				<ScriptData>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</ScriptData>
+				<ScriptVersion>1</ScriptVersion>
+				<ScriptGuid>ea81c622-8570-11ec-bdb2-005056955de5</ScriptGuid>
+				<ScriptFlags>0</ScriptFlags>
+				<Parameters>Link_GPO_to_Root_True_or_False</Parameters>
+			</Table>
+		</NewDataSet>
+		<PackedScript>
+			<NewDataSet>
+				<Table>
+					<ScriptId>6203</ScriptId>
+					<FolderId>320</FolderId>
+					<ScriptName>Agent Deploy - Remove GPO on DC</ScriptName>
+					<ScriptNotes>Will automatically execute from the FSMO PDC Emulator within the Client
+• Remove existing 'CW Automate Agent Deployment' GPO
+
+Created by Chuck Fowler v3.0  2021-10
+https://github.com/Braingears/
+https://forums.mspgeek.org/topic/5373-deploy-agents-automate-scripts/</ScriptNotes>
+					<Permission>0,</Permission>
+					<EditPermission>0,</EditPermission>
+					<ComputerScript>1</ComputerScript>
+					<LocationScript>0</LocationScript>
+					<MaintenanceScript>0</MaintenanceScript>
+					<FunctionScript>0</FunctionScript>
+					<LicenseData>H4sIAAAAAAAEAFWPywqDMBRE94X+Qz7AkIemRblk09emhdJK91dzF9lEiQbq3xelBbsaZoYzMHD1LYWBjjiihXrqySoQi8IjhUOXwkjRShArB6d37+PMkK0TDQ6njJ2piQnjxJTKmJZasrwq8kppdr+BWBHwbKPvxxfFwXdhnv4Pvv0leWfbfYO5KzUvnEauFCHHpkAupZFmVxrjyPz4BQCxPrTdfAC6HM5u4AAAAA==</LicenseData>
+					<ScriptData>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</ScriptData>
+					<ScriptVersion>1</ScriptVersion>
+					<ScriptGuid>c7ba3d92-4d2a-11ea-ab4a-005056955de5</ScriptGuid>
+					<ScriptFlags>0</ScriptFlags>
+					<Parameters></Parameters>
+				</Table>
+			</NewDataSet>
+			<ScriptFolder>
+				<NewDataSet>
+					<Table>
+						<FolderID>320</FolderID>
+						<ParentID>205</ParentID>
+						<Name>Automate - Deploy</Name>
+						<GUID>5d7afdc0-bc7d-4367-88ee-344618bd4668</GUID>
+					</Table>
+				</NewDataSet>
+			</ScriptFolder>
+			<ScriptFolder>
+				<NewDataSet>
+					<Table>
+						<FolderID>205</FolderID>
+						<ParentID>0</ParentID>
+						<Name>CWA Custom - Chuck Fowler</Name>
+						<GUID>bfaf1167-4d6e-4d0c-ac12-3f9fd23046d8</GUID>
+					</Table>
+				</NewDataSet>
+			</ScriptFolder>
+		</PackedScript>
+		<PackedScript>
+			<NewDataSet>
+				<Table>
+					<ScriptId>5960</ScriptId>
+					<FolderId>237</FolderId>
+					<ScriptName>Function - Extract Zip</ScriptName>
+					<ScriptNotes>Requires: 
+@ZipFullPath@ - The Full Path of the zip file to be extracted
+@ZipExtractPath@ - Extract the Zip to the following Path.
+
+Created by Chuck Fowler</ScriptNotes>
+					<Permission>0,</Permission>
+					<EditPermission>0,</EditPermission>
+					<ComputerScript>1</ComputerScript>
+					<LocationScript>0</LocationScript>
+					<MaintenanceScript>0</MaintenanceScript>
+					<FunctionScript>1</FunctionScript>
+					<LicenseData>H4sIAAAAAAAEAFWPzQrCMBCE74LvkAdoyB+rtSy5+HexICreQ7JgLmlJW7BvLy0K9TTMznwLg5foKXV0cL2z+BhbsgrFrHgb0r4ZUk/ZShQLh8d3G/PEkD3lGNxYsNpl/2LaFExLVTJTSaiMYdcaxaKNd59j2z8pd7FJ09v/wzc/DzFYIu932yC5Jhe4UlTyUnvgUoKEzQ4gEPz4GUCxHLNefQA3F55c3AAAAA==</LicenseData>
+					<ScriptData>H4sIAAAAAAAEAOWYUW/aMBDH3yftO1iVeAyQQAggFlFRqCpVGhJbHypevPharBo7ip2S7tPPCQ4NCEK3kUnRnuL/nW3ZP5/vkowWQURDdYMV9j9/Qmi01TITWk4TFeHUO6PAiESt3DHHEV6Dgqhgu2XiB2bSvw7DmWAEoi8Nx91QTmikGw13cv9t8Rro5ySWSqznOHjBzyBHrXygmWe7hgc9NxXct0etfcNer9uYEh8gCAYeaVsOYGLZNvStvhO4Vrvttt3ewHUJuPks2YBsq63iXs10CwXhbh3XgTILMC1jn8U803ck9RVUkY19wMo50J0D3T3Q7rteiEj5bb3e9GlsE8EV5TGk9l3b+L7Ke7qm2ZC8aTx3nABXONuM9hZlEck7hRIsThmWzuA0GH94IzacCUy8RxqOWsb6/8KyuyWwxrvbNF56lga29H7iJiRwHFy6UtPaA+gPp5wc4d75La72pbk6FXJ1+iVYvyvKqKIglx46D/XcITh/Fa1OnajWKFo7deLqlGXMk1jRE2WANlgiLhR6EjEnTZSDQ2v8hlb4VffCuhtBIQMsQZtfAMk4AqTLL1cowByRfIxabSdtommiLwh/Rtv9VJKnu5c+oW6VJ2S7/6zau3UCc6baH7/Klw2kXq0K/hle6Tt3UM2F8+rEqTQlThMI4jQ/DdHp7JigsZazmLE5VqtxJUj7daoydu+PqkyCrvZAXiFLZBYTq7nxrRLCgzoR/kjQCj5EDbkCxiKQMVONSrDZF/8KqjQyzxaRKvOiffEvmw8kxlybvy+/AFnqf1WMEQAA</ScriptData>
+					<ScriptVersion>1</ScriptVersion>
+					<ScriptGuid>eecc97d0-2ead-11e8-82c5-005056955de5</ScriptGuid>
+					<ScriptFlags>0</ScriptFlags>
+					<Parameters></Parameters>
+				</Table>
+			</NewDataSet>
+			<ScriptFolder>
+				<NewDataSet>
+					<Table>
+						<FolderID>237</FolderID>
+						<ParentID>205</ParentID>
+						<Name>Automate</Name>
+						<GUID>f25f3e41-6b75-4585-b002-e40a65f14c02</GUID>
+					</Table>
+				</NewDataSet>
+			</ScriptFolder>
+			<ScriptFolder>
+				<NewDataSet>
+					<Table>
+						<FolderID>205</FolderID>
+						<ParentID>0</ParentID>
+						<Name>CWA Custom - Chuck Fowler</Name>
+						<GUID>bfaf1167-4d6e-4d0c-ac12-3f9fd23046d8</GUID>
+					</Table>
+				</NewDataSet>
+			</ScriptFolder>
+		</PackedScript>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>320</FolderID>
+					<ParentID>205</ParentID>
+					<Name>Automate - Deploy</Name>
+					<GUID>5d7afdc0-bc7d-4367-88ee-344618bd4668</GUID>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>205</FolderID>
+					<ParentID>0</ParentID>
+					<Name>CWA Custom - Chuck Fowler</Name>
+					<GUID>bfaf1167-4d6e-4d0c-ac12-3f9fd23046d8</GUID>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+	</PackedScript>
+</LabTech_Expansion>

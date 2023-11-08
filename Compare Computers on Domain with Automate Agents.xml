@@ -1,0 +1,48 @@
+﻿<LabTech_Expansion
+	Version="230.475"
+	Name="LabTech Script Expansion"
+	Type="PackedScript">
+	<PackedScript>
+		<NewDataSet>
+			<Table>
+				<ScriptId>6389</ScriptId>
+				<FolderId>320</FolderId>
+				<ScriptName>Compare Computers on Domain with Automate Agents</ScriptName>
+				<ScriptNotes>Client must have Windows Domain Controller. 
+• Compates the computers on the domain (logged in within 30 days) against the computers with Automate agents installed.</ScriptNotes>
+				<Permission>0,</Permission>
+				<EditPermission>0,</EditPermission>
+				<ComputerScript>1</ComputerScript>
+				<LocationScript>0</LocationScript>
+				<MaintenanceScript>0</MaintenanceScript>
+				<FunctionScript>0</FunctionScript>
+				<LicenseData>H4sIAAAAAAAEAFWPsQrCMBiEd8F3yAM0JGmbmpafLCouCmJF57b5hwymIU3Bvr20KNTpuDu+g4Oz7dANeGhio+E+edQC2KJwG92+H13EoDmwlYPj29swM6ifaBwOppkSUqOP+GoxEC4TknKhiKgyWcmMXC/AVhDUXbA+PjAMtnfz+n/w7U+jNTo3hVI7ldNWZIIKgR0t27SgnEsui1JKg/LHLwCw9aft5gO9QbGl4wAAAA==</LicenseData>
+				<ScriptData>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</ScriptData>
+				<ScriptVersion>1</ScriptVersion>
+				<ScriptGuid>4d688784-b131-11ec-9b26-005056955de5</ScriptGuid>
+				<ScriptFlags>0</ScriptFlags>
+				<Parameters></Parameters>
+			</Table>
+		</NewDataSet>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>320</FolderID>
+					<ParentID>205</ParentID>
+					<Name>Automate - Deploy</Name>
+					<GUID>5d7afdc0-bc7d-4367-88ee-344618bd4668</GUID>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>205</FolderID>
+					<ParentID>0</ParentID>
+					<Name>CWA Custom - Chuck Fowler</Name>
+					<GUID>bfaf1167-4d6e-4d0c-ac12-3f9fd23046d8</GUID>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+	</PackedScript>
+</LabTech_Expansion>
